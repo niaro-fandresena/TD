@@ -15,30 +15,31 @@ int  main ()
 	{
 		if ( b == 0 )
 		{
-		printf ("Pas de solution!");
+			printf ("Pas de solution!\n");
 		}
 		else 
 		{
-		x = - c / b;
-		printf ("La solution est %f. \n", x );
+			x = - c / b;
+			printf ("La solution est %f. \n", x );
 		}
 	}
 	else if ( delta == 0 )
 	{
-	x = - b / 2 * a;
+		x = - b / 2 * a;
 	}
 	else if ( delta < 0 )
 	{
-	k = sqrt ( - ( delta ) );
-	e = (-b) / ( 2  * a ) ;
-	d = k / ( 2 * a ) ;
-	printf ("Les deux solutions complexes sont x1 = %.2f - %.2fi, et x2 = %.2f + %.2fi \n", e, d, e, d );
+		k = sqrt ( - ( delta ) );
+		e = (-b) / ( 2  * a ) ;
+		d = k / ( 2 * a ) ;
+		printf ("Les deux solutions complexes sont x1 = %.2f - %.2fi, et x2 = %.2f + %.2fi \n", e, d, e, d );
 	}
 	else
 	{
-	x1 = ( - b - sqrt ( delta ) ) / ( 2 * a );
-	x2 = ( - b + sqrt ( delta ) ) / ( 2 * a );
-	printf ("Les deux solutions sont x1 = %f et = %f \n", x1, x2 );
+		x1 = ( - b - sqrt ( delta ) ) / ( 2 * a );
+		x2 = ( - b + sqrt ( delta ) ) / ( 2 * a );
+		printf ("Les deux solutions sont x1 = %f et = %f \n", x1, x2 );
 	}
+	
 	return ( 0 ) ;
 }
